@@ -47,8 +47,26 @@ class SingleInvoiceListResource(Resource):
         db.session.commit()
         return '', 204
 
+
+class InvoiceBasedOnClientNameListResource(Resource):
+
+    def __init__(self):
+        self.invoice_schema = InvoiceSchema(many=True)
+
+    def get(self, name):
+        invoices = Invoice.query.filter_by(client_name=name)
+        return jsonify(self.invoice_schema.dump(invoices))
+
+    def delete(self, name):
+        invoices = Invoice.query.filter_by(client_name=name)
+        for invoice in invoices:
+            db.session.delete(invoice)
+        db.session.commit()
+        return '', 204
+
 api.add_resource(InvoiceListResource, '/')
 api.add_resource(SingleInvoiceListResource, '/<int:id>')
+api.add_resource(InvoiceBasedOnClientNameListResource, '/client/<name>')
 
 
 
