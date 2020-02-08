@@ -10,6 +10,11 @@
 
 # API info
 - GET all invoices: `/`
-- GET 1 invoice based on client: `/client_name={name}` (TODO)
+- POST invoice with invoice items: `/`, Header: `["key":"Content-Type","value":"application/json"]`, Body(raw): `{"client_name":"Eastridge","invoice_items":[{"units":1,"description":"Some cool product #1","amount":19.99},{"units":2,"description":"Some cool product #2","amount":29.99}]}`
+
+- GET single invoice based on `id`: `/id`
+- DELETE single invoice based on `id`: `/id`
+
 - GET invoices based on date: TODO
-- POST an invoice TODO
+- GET 1 invoice based on client: `/client_name={name}` (TODO)
+- DELETE single invoice based on `/client_name={name}` (TODO)
