@@ -7,3 +7,9 @@
 - To populate initial DB run the following: `python build_database.py`
 - Run the app: `python app.py`
 
+
+# API info
+- GET all invoices: `/`
+- GET 1 invoice based on client: `/client_name={name}` (TODO)
+- GET invoices based on date: TODO
+- POST an invoice TODO
