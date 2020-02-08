@@ -7,7 +7,7 @@ class Invoice(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     client_name = db.Column(db.String(60), nullable=False)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
-    invoices = db.relationship('InvoiceItem', backref='invoice')
+    invoices = db.relationship('InvoiceItem', cascade='all, delete', backref='invoice')
 
 
 class InvoiceItem(db.Model):
