@@ -22,7 +22,7 @@ class InvoiceItem(db.Model):
 class InvoiceItemSchema(ma.ModelSchema):
     class Meta:
         model = InvoiceItem
-        exclude = ['id']
+        exclude = ['id', 'invoice']
 
 
 class InvoiceSchema(ma.ModelSchema):
