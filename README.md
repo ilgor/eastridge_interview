@@ -15,6 +15,8 @@
 - GET single invoice based on `id`: `/id`
 - DELETE single invoice based on `id`: `/id`
 
+- GET 1 invoice based on client: `/client_name/{name}`
+- DELETE single invoice based on `/client_name/{name}`
+
 - GET invoices based on date: TODO
-- GET 1 invoice based on client: `/client_name={name}` (TODO)
-- DELETE single invoice based on `/client_name={name}` (TODO)
+- GET invoice based on date and client_name: TODO
