@@ -1,5 +1,13 @@
 # Instructions:
 
+```diff
+- I used Pipenv for virtual env, please install it on your computer before doing anything
+```
+Follow the official docs for `Pipenv` to install [here](https://pypi.org/project/pipenv/)
+
+
+
+
 - Pull down the project: `git clone https://github.com/ilgor/eastridge_interview.git`
 - Go inside the project: `cd eastridge_interview`
 - Activate Virtual Environment: `pipenv shell`
