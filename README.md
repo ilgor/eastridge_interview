@@ -1,4 +1,4 @@
-# Pipenv
+# Pipenv:
 
 ```diff
 - I used Pipenv for virtual env, please install it on your computer before doing anything
@@ -16,7 +16,7 @@ If you dont have `Pipenv` please follow the official docs to install [here](http
 - Run the app: `python app.py`
 
 
-# API info
+# API info:
 - GET all invoices: `/all`
 - GET any combination of Invoices by passing Params. Example: `localhost:5000/all?client_name=Eastridge&amount=19.99&units=5`
 
