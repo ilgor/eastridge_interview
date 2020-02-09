@@ -1,11 +1,11 @@
-# Instructions:
+# Pipenv
 
 ```diff
 - I used Pipenv for virtual env, please install it on your computer before doing anything
 ```
 If you dont have `Pipenv` please follow the official docs to install [here](https://pypi.org/project/pipenv/)
 
-
+# Instructions:
 
 
 - Pull down the project: `git clone https://github.com/ilgor/eastridge_interview.git`
