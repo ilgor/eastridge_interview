@@ -3,7 +3,7 @@
 ```diff
 - I used Pipenv for virtual env, please install it on your computer before doing anything
 ```
-Follow the official docs for `Pipenv` to install [here](https://pypi.org/project/pipenv/)
+If you dont have `Pipenv` please follow the official docs to install [here](https://pypi.org/project/pipenv/)
 
 
 
@@ -18,7 +18,7 @@ Follow the official docs for `Pipenv` to install [here](https://pypi.org/project
 
 # API info
 - GET all invoices: `/all`
-- GEL any combination of Invoices by passing Params. Example: `localhost:5000/all?client_name=Eastridge&amount=19.99&units=5`
+- GET any combination of Invoices by passing Params. Example: `localhost:5000/all?client_name=Eastridge&amount=19.99&units=5`
 
 - POST invoice with invoice items: `/new`, Header: `["key":"Content-Type","value":"application/json"]`, Body(raw): `{"client_name":"Eastridge","invoice_items":[{"units":1,"description":"Some cool product #1","amount":19.99},{"units":2,"description":"Some cool product #2","amount":29.99}]}`
 
